@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.MangaOverviewActivity"
+    tools:showIn="@layout/activity_manga_overview"
+    android:fillViewport="true">
+
+    <!--If fillViewport = "true" is not set,
+        the viewpager cannot be swiped left and right-->
+
+    <!-- Fragment screen size is determined by width & height of
+         ViewPager -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/manga_overview_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?actionBarSize"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabIndicatorHeight="4dp"
+            app:tabBackground="@android:color/white"
+            app:tabMode="fixed">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/manga_overview_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

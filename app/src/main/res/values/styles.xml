@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:dropDownItemStyle">@style/myDropDownItemStyle</item>
+        <item name="android:dropDownListViewStyle">@style/myDropDownListViewStyle</item>
+        <!--<item name="autoCompleteTextViewStyle">@style/myAutoCompleteTextViewStyle</item>-->
+        <!--<item name="textAppearanceSearchResultTitle">@style/mySearchResult</item>-->
+    </style>
+
+    <!-- Style for MainActivity -->
+    <!-- This style specifically uses NoActionBar to accomodate the FloatingSearchView -->
+    <!-- Other activities use the base AppTheme to have the back arrow functionality present in action bar -->
+    <style name="mainActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:dropDownItemStyle">@style/myDropDownItemStyle</item>
+        <item name="android:dropDownListViewStyle">@style/myDropDownListViewStyle</item>
+        <!--<item name="autoCompleteTextViewStyle">@style/myAutoCompleteTextViewStyle</item>-->
+        <!--<item name="textAppearanceSearchResultTitle">@style/mySearchResult</item>-->
+    </style>
+
+    <style name="myDropDownItemStyle" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceListItemSmall</item>
+    </style>
+
+    <style name="myDropDownListViewStyle" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:background">#FFF</item>
+    </style>
+
+
+    <style name="myAutoCompleteTextViewStyle" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:popupBackground">#ffffff</item>
+    </style>
+
+    <style name="mySearchResult" parent="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>
